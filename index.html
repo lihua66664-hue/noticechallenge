@@ -48,6 +48,7 @@
             justify-content: center;
             min-height: 100vh;
             padding: 20px;
+            font-size: 16px; /* 基础字号放大 */
         }
         .text-gradient {
             background: linear-gradient(90deg,#0EA5E9,#10B981);
@@ -59,40 +60,40 @@
             background: #1E293B;
             border: 1px solid rgba(14,165,233,0.3);
             border-radius: 14px;
-            padding: 24px;
+            padding: 28px; /* 卡片内边距增大 */
         }
         .card-sci {
             background: #0F172A;
             border: 1px solid rgba(14,165,233,0.2);
             border-radius: 10px;
-            padding: 16px;
-            margin-bottom: 12px;
+            padding: 18px; /* 卡片内边距增大 */
+            margin-bottom: 14px;
         }
         .card-harm {
             background: #0F172A;
             border: 1px solid rgba(239,68,68,0.2);
             border-radius: 10px;
-            padding: 16px;
-            margin-bottom: 12px;
+            padding: 18px; /* 卡片内边距增大 */
+            margin-bottom: 14px;
         }
         .btn-cyber {
-            padding: 12px 20px;
+            padding: 14px 22px; /* 按钮内边距增大 */
             border-radius: 10px;
             background: linear-gradient(90deg,#0EA5E9,#10B981);
             color: #fff;
             font-weight: 600;
-            font-size: 15px;
+            font-size: 17px; /* 按钮文字放大 */
             border: none;
             cursor: pointer;
             transition: all 0.2s ease;
         }
         .btn-cyber:hover { transform: scale(1.02); opacity: 0.95; }
         .btn-cyber-outline {
-            padding: 12px 20px;
+            padding: 14px 22px; /* 按钮内边距增大 */
             border-radius: 10px;
             border: 1px solid rgba(14,165,233,0.6);
             color: #F1F5F9;
-            font-size: 15px;
+            font-size: 17px; /* 按钮文字放大 */
             background: transparent;
             cursor: pointer;
             transition: all 0.2s ease;
@@ -102,11 +103,11 @@
             width: 100%;
             background: #0A0A0A;
             border-radius: 24px;
-            padding: 18px;
+            padding: 20px; /* 屏幕内边距增大 */
         }
         .app-icon {
-            width: 54px;
-            height: 54px;
+            width: 60px; /* APP图标尺寸增大 */
+            height: 60px; /* APP图标尺寸增大 */
             border-radius: 14px;
             background: #1A1A1A;
             border: 1px solid rgba(241,245,249,0.1);
@@ -114,22 +115,22 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            font-size: 10px;
+            font-size: 12px; /* 图标文字放大 */
             gap: 4px;
             cursor: pointer;
         }
         .app-folder {
             width: 100%;
-            min-height: 120px;
+            min-height: 140px; /* 文件夹高度增大 */
             background: #141414;
             border-radius: 14px;
-            padding: 12px;
+            padding: 14px; /* 文件夹内边距增大 */
             border: 1px solid rgba(14,165,233,0.2);
         }
         .folder-title {
-            font-size: 12px;
+            font-size: 14px; /* 文件夹标题文字放大 */
             color: rgba(241,245,249,0.6);
-            margin-bottom: 8px;
+            margin-bottom: 10px;
             padding-left: 2px;
         }
         .drag-over {
@@ -137,12 +138,12 @@
             border: 2px solid #10B981;
         }
         .choice-item {
-            padding: 14px;
+            padding: 16px; /* 选项内边距增大 */
             border-radius: 10px;
             border: 1px solid rgba(14,165,233,0.3);
             cursor: pointer;
-            margin-bottom: 8px;
-            font-size: 15px;
+            margin-bottom: 10px;
+            font-size: 17px; /* 选项文字放大 */
             transition: all 0.2s ease;
         }
         .choice-item.active {
@@ -153,16 +154,16 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 12px;
+            padding: 14px; /* 通知项内边距增大 */
             border-radius: 10px;
             border: 1px solid rgba(14,165,233,0.3);
             background: #1E293B;
-            margin-bottom: 8px;
-            font-size: 15px;
+            margin-bottom: 10px;
+            font-size: 17px; /* 通知项文字放大 */
         }
         .notify-switch {
-            width: 46px;
-            height: 24px;
+            width: 50px; /* 开关宽度增大 */
+            height: 26px; /* 开关高度增大 */
             border-radius: 999px;
             position: relative;
             cursor: pointer;
@@ -171,8 +172,8 @@
         .switch-on { background: #10B981; }
         .switch-off { background: #444; }
         .switch-circle {
-            width: 18px;
-            height: 18px;
+            width: 20px; /* 开关圆点尺寸增大 */
+            height: 20px; /* 开关圆点尺寸增大 */
             background: #fff;
             border-radius: 50%;
             position: absolute;
@@ -194,7 +195,7 @@
         .page {
             position: absolute;
             inset: 0;
-            padding: 24px 16px;
+            padding: 28px 20px; /* 页面内边距增大 */
             overflow-y: auto;
             background: #0F172A;
             opacity: 0;
@@ -208,24 +209,24 @@
             transform: translateY(0);
         }
 
-        /* 真实手机外壳 */
+        /* 真实手机外壳 - 核心调整：放大整体尺寸 */
         .phone-body {
-            width: 360px;
-            height: 720px;
+            width: 420px; /* 从360px放大到420px */
+            height: 820px; /* 从720px放大到820px */
             background: #111;
-            border-radius: 56px;
-            padding: 20px;
-            box-shadow: 0 0 0 12px #1a1a1a, 0 30px 60px rgba(0,0,0,0.7);
+            border-radius: 60px; /* 圆角同步放大 */
+            padding: 24px; /* 手机壳内边距增大 */
+            box-shadow: 0 0 0 14px #1a1a1a, 0 30px 60px rgba(0,0,0,0.7);
             position: relative;
         }
         .phone-body::before {
             content: '';
             position: absolute;
-            top: 18px;
+            top: 20px;
             left: 50%;
             transform: translateX(-50%);
-            width: 150px;
-            height: 30px;
+            width: 180px; /* 听筒宽度增大 */
+            height: 32px; /* 听筒高度增大 */
             background: #111;
             border-radius: 20px;
         }
@@ -235,49 +236,49 @@
             width: 100%;
             height: 100%;
             background: #0a0a0a;
-            border-radius: 36px;
+            border-radius: 40px; /* 屏幕圆角同步放大 */
             overflow: hidden;
             position: relative;
         }
 
         /* 手机状态栏 */
         .status-bar {
-            height: 40px;
+            height: 44px; /* 状态栏高度增大 */
             background: rgba(0,0,0,0.85);
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 0 20px;
-            font-size: 12px;
+            padding: 0 24px; /* 状态栏内边距增大 */
+            font-size: 14px; /* 状态栏文字放大 */
             color: #ddd;
         }
 
         /* 手机弹窗通知 */
         #phone-notification {
             position: absolute;
-            top: 40px;
+            top: 44px;
             left: 50%;
             transform: translateX(-50%) translateY(-120%);
             width: 90%;
             background: rgba(24, 24, 27, 0.98);
             border: 1px solid #ef4444;
-            border-radius: 14px;
+            border-radius: 16px; /* 通知弹窗圆角增大 */
             box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.7);
             z-index: 50;
             transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
             opacity: 0;
         }
         #phone-notification.show {
-            transform: translateX(-50%) translateY(8px);
+            transform: translateX(-50%) translateY(10px);
             opacity: 1;
         }
 
         .time-option {
-            padding: 10px 12px;
+            padding: 12px 14px; /* 时间选项内边距增大 */
             border-radius: 8px;
             border: 1px solid rgba(14,165,233,0.4);
             text-align: center;
-            font-size: 14px;
+            font-size: 16px; /* 时间选项文字放大 */
             cursor: pointer;
             transition: 0.2s ease;
         }
@@ -287,8 +288,8 @@
         }
 
         /* 滚动条美化 */
-        ::-webkit-scrollbar { width: 3px; }
-        ::-webkit-scrollbar-thumb { background: #0EA5E9; border-radius: 3px; }
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-thumb { background: #0EA5E9; border-radius: 4px; }
         ::-webkit-scrollbar-track { background: transparent; }
 
         /* 文字动态效果 */
@@ -316,260 +317,260 @@
             </div>
 
             <!-- 所有页面都放在屏幕内部 -->
-            <div class="relative w-full h-[calc(100%-40px)]">
+            <div class="relative w-full h-[calc(100%-44px)]">
                 <!-- 1.封面页 -->
                 <div class="page active" id="page-cover">
                     <div class="flex flex-col items-center justify-center min-h-[80%] text-center px-4">
-                        <h1 class="text-[clamp(2rem,5vw,2.6rem)] font-bold text-gradient mb-4 animate-title-beat animate-title-glow">
+                        <h1 class="text-[clamp(2.2rem,5vw,2.8rem)] font-bold text-gradient mb-6 animate-title-beat animate-title-glow">
                             被“绑架”的注意力
                         </h1>
-                        <p class="text-cyber-light/80 text-base mb-2 animate-fade-up delay-100">为什么一拿手机，就忘了本来要干嘛？</p>
-                        <p class="text-sm text-cyber-light/50 mb-8 animate-fade-up delay-200">融合新闻 · 沉浸式互动科普</p>
-                        <button class="btn-cyber text-base px-10 py-4 animate-fade-up delay-300" data-page="page-game">开始体验</button>
+                        <p class="text-cyber-light/80 text-lg mb-3 animate-fade-up delay-100">为什么一拿手机，就忘了本来要干嘛？</p>
+                        <p class="text-base text-cyber-light/50 mb-10 animate-fade-up delay-200">融合新闻 · 沉浸式互动科普</p>
+                        <button class="btn-cyber text-lg px-12 py-5 animate-fade-up delay-300" data-page="page-game">开始体验</button>
                     </div>
                 </div>
 
                 <!-- 2.手机小游戏页 -->
                 <div class="page" id="page-game">
                     <div class="flex flex-col h-full">
-                        <div class="bg-zinc-950 border-b border-red-900 px-4 py-3 text-center">
-                            <h1 class="text-red-400 font-bold text-xl tracking-widest">注意力被绑架</h1>
+                        <div class="bg-zinc-950 border-b border-red-900 px-5 py-4 text-center">
+                            <h1 class="text-red-400 font-bold text-2xl tracking-widest">注意力被绑架</h1>
                         </div>
-                        <div class="bg-zinc-900 px-4 py-3 border-b border-zinc-800">
-                            <div class="flex justify-between text-sm mb-3 text-zinc-400">
+                        <div class="bg-zinc-900 px-5 py-4 border-b border-zinc-800">
+                            <div class="flex justify-between text-base mb-4 text-zinc-400">
                                 <span>专注力 <span id="focus-val" class="text-emerald-400 font-bold">100</span></span>
                                 <span>进度 <span id="progress-val" class="text-sky-400 font-bold">0%</span></span>
                                 <span>剩余 <span id="time-val" class="font-bold">25</span>min</span>
                             </div>
-                            <div class="h-2.5 bg-zinc-800 rounded-full overflow-hidden">
+                            <div class="h-3 bg-zinc-800 rounded-full overflow-hidden">
                                 <div id="focus-bar" class="h-full bg-gradient-to-r from-emerald-500 to-cyan-400 transition-all" style="width: 100%"></div>
                             </div>
-                            <div class="h-2 mt-2 bg-zinc-800 rounded-full overflow-hidden">
+                            <div class="h-2.5 mt-3 bg-zinc-800 rounded-full overflow-hidden">
                                 <div id="progress-bar" class="h-full bg-sky-500 transition-all" style="width: 0%"></div>
                             </div>
                         </div>
-                        <div class="flex-1 p-5 overflow-y-auto bg-[#0f0f0f] text-zinc-200 leading-relaxed text-base relative">
+                        <div class="flex-1 p-6 overflow-y-auto bg-[#0f0f0f] text-zinc-200 leading-relaxed text-lg relative">
                             <div id="story" class="animate-fade-up">你终于坐下来，准备完成那份拖了三周的报告。
 
 手机就乖乖躺在旁边。你摸着良心发誓："这次真的不碰！"</div>
                         </div>
-                        <div class="p-4 bg-zinc-950 border-t border-zinc-800" id="choices"></div>
+                        <div class="p-5 bg-zinc-950 border-t border-zinc-800" id="choices"></div>
                     </div>
                     <div id="phone-notification">
-                        <div class="flex items-start gap-3 p-4">
-                            <div class="w-9 h-9 bg-gradient-to-br from-green-400 to-blue-500 rounded-xl flex items-center justify-center flex-shrink-0">
-                                <i class="fa-brands fa-weixin text-white text-lg"></i>
+                        <div class="flex items-start gap-4 p-5">
+                            <div class="w-10 h-10 bg-gradient-to-br from-green-400 to-blue-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fa-brands fa-weixin text-white text-xl"></i>
                             </div>
                             <div class="flex-1">
-                                <div class="font-semibold text-base text-white" id="noti-app">微信</div>
-                                <div id="noti-content" class="text-sm text-zinc-300 mt-1 leading-tight"></div>
+                                <div class="font-semibold text-lg text-white" id="noti-app">微信</div>
+                                <div id="noti-content" class="text-base text-zinc-300 mt-1 leading-tight"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="absolute bottom-5 left-4 right-4">
-                        <button class="btn-cyber w-full text-base" id="next-btn" disabled style="opacity: 0.6;cursor: not-allowed;">完成挑战，了解背后的真相 →</button>
+                    <div class="absolute bottom-6 left-5 right-5">
+                        <button class="btn-cyber w-full text-lg" id="next-btn" disabled style="opacity: 0.6;cursor: not-allowed;">完成挑战，了解背后的真相 →</button>
                     </div>
                 </div>
 
                 <!-- 3.全民困境页 -->
                 <div class="page" id="page-story1">
-                    <div class="card-glow mb-5 animate-fade-up">
-                        <h2 class="text-xl font-bold text-gradient mb-4 text-center animate-title-glow">全民困境：数字时代的集体走神危机</h2>
-                        <p class="mb-3 leading-relaxed text-base animate-fade-up delay-100">你一定有过这样的经历：早晨醒来第一件事就是摸手机，本只想查看天气、日程，手指却无意识刷起朋友圈、短视频；办公学习时打开电脑，本意是查阅专业资料、完成作业工作，却被弹窗推送、热点话题、好友消息带偏注意力。</p>
-                        <p class="mb-3 leading-relaxed text-base animate-fade-up delay-200">很多人常常陷入「拿起手机只想做一件小事，最后却浪费半小时甚至几小时」的怪圈，事后又陷入自责、焦虑，却下一次依旧重蹈覆辙。</p>
-                        <p class="leading-relaxed text-base animate-fade-up delay-300">据国内互联网行为调研数据显示：超83%智能手机用户每天经历「数字失忆」，人均每日无意识解锁手机60-100次，40%以上用户拿起手机30秒内就偏离初始目标，专注力正在被一点点蚕食。</p>
+                    <div class="card-glow mb-6 animate-fade-up">
+                        <h2 class="text-2xl font-bold text-gradient mb-5 text-center animate-title-glow">全民困境：数字时代的集体走神危机</h2>
+                        <p class="mb-4 leading-relaxed text-lg animate-fade-up delay-100">你一定有过这样的经历：早晨醒来第一件事就是摸手机，本只想查看天气、日程，手指却无意识刷起朋友圈、短视频；办公学习时打开电脑，本意是查阅专业资料、完成作业工作，却被弹窗推送、热点话题、好友消息带偏注意力。</p>
+                        <p class="mb-4 leading-relaxed text-lg animate-fade-up delay-200">很多人常常陷入「拿起手机只想做一件小事，最后却浪费半小时甚至几小时」的怪圈，事后又陷入自责、焦虑，却下一次依旧重蹈覆辙。</p>
+                        <p class="leading-relaxed text-lg animate-fade-up delay-300">据国内互联网行为调研数据显示：超83%智能手机用户每天经历「数字失忆」，人均每日无意识解锁手机60-100次，40%以上用户拿起手机30秒内就偏离初始目标，专注力正在被一点点蚕食。</p>
                     </div>
-                    <p class="text-sm text-center text-cyber-light/50 mb-4 animate-fade-up delay-400">为什么我们明明想专注，却总被手机牵着走？</p>
-                    <div class="flex gap-3 animate-fade-up delay-400">
-                        <button class="btn-cyber flex-1 text-base" data-page="page-story2">深挖背后真相</button>
-                        <button class="btn-cyber-outline flex-1 text-base" data-page="page-game">返回体验</button>
+                    <p class="text-base text-center text-cyber-light/50 mb-6 animate-fade-up delay-400">为什么我们明明想专注，却总被手机牵着走？</p>
+                    <div class="flex gap-4 animate-fade-up delay-400">
+                        <button class="btn-cyber flex-1 text-lg" data-page="page-story2">深挖背后真相</button>
+                        <button class="btn-cyber-outline flex-1 text-lg" data-page="page-game">返回体验</button>
                     </div>
                 </div>
 
                 <!-- 4.背后真相页 -->
                 <div class="page" id="page-story2">
-                    <div class="card-glow mb-5 animate-fade-up">
-                        <h2 class="text-xl font-bold text-gradient mb-4 text-center animate-title-glow">真相：注意力，是数字时代最昂贵的资产</h2>
-                        <p class="mb-3 leading-relaxed text-base animate-fade-up delay-100">在互联网商业逻辑中，有一句行业共识：用户的注意力，就是平台的流量与财富。所有短视频、社交、资讯类产品，底层目标从来不是单纯服务用户，而是无限抢占你的碎片时间。</p>
-                        <p class="mb-3 leading-relaxed text-base animate-fade-up delay-200">平台集结心理学、行为经济学、神经科学专家，精心设计每一个细节：红色消息角标、无间断推送提醒、无限下滑信息流、随机奖励机制，全部都是为了勾起你的好奇心、强迫症与成瘾心理。</p>
-                        <p class="leading-relaxed text-base animate-fade-up delay-300">你不是自制力差，只是陷入了一场被精心设计的注意力掠夺战。</p>
+                    <div class="card-glow mb-6 animate-fade-up">
+                        <h2 class="text-2xl font-bold text-gradient mb-5 text-center animate-title-glow">真相：注意力，是数字时代最昂贵的资产</h2>
+                        <p class="mb-4 leading-relaxed text-lg animate-fade-up delay-100">在互联网商业逻辑中，有一句行业共识：用户的注意力，就是平台的流量与财富。所有短视频、社交、资讯类产品，底层目标从来不是单纯服务用户，而是无限抢占你的碎片时间。</p>
+                        <p class="mb-4 leading-relaxed text-lg animate-fade-up delay-200">平台集结心理学、行为经济学、神经科学专家，精心设计每一个细节：红色消息角标、无间断推送提醒、无限下滑信息流、随机奖励机制，全部都是为了勾起你的好奇心、强迫症与成瘾心理。</p>
+                        <p class="leading-relaxed text-lg animate-fade-up delay-300">你不是自制力差，只是陷入了一场被精心设计的注意力掠夺战。</p>
                     </div>
-                    <div class="flex gap-3 animate-fade-up delay-400">
-                        <button class="btn-cyber flex-1 text-base" data-page="page-science1">科学原理解码</button>
-                        <button class="btn-cyber-outline flex-1 text-base" data-page="page-story1">返回上一页</button>
+                    <div class="flex gap-4 animate-fade-up delay-400">
+                        <button class="btn-cyber flex-1 text-lg" data-page="page-science1">科学原理解码</button>
+                        <button class="btn-cyber-outline flex-1 text-lg" data-page="page-story1">返回上一页</button>
                     </div>
                 </div>
 
                 <!-- 5.科学解码页 -->
                 <div class="page" id="page-science1">
-                    <div class="card-glow mb-5 animate-fade-up">
-                        <h2 class="text-xl font-bold text-gradient mb-4 text-center animate-title-glow">科学解码：三大机制，悄悄偷走你的专注</h2>
+                    <div class="card-glow mb-6 animate-fade-up">
+                        <h2 class="text-2xl font-bold text-gradient mb-5 text-center animate-title-glow">科学解码：三大机制，悄悄偷走你的专注</h2>
                         <div class="card-sci animate-fade-up delay-100">
-                            <div class="flex items-center gap-2 mb-2">
-                                <i class="fa-solid fa-door-open text-cyber-blue"></i>
-                                <h3 class="font-bold text-cyber-blue text-base">1. 心理学：门口效应</h3>
+                            <div class="flex items-center gap-3 mb-3">
+                                <i class="fa-solid fa-door-open text-cyber-blue text-lg"></i>
+                                <h3 class="font-bold text-cyber-blue text-lg">1. 心理学：门口效应</h3>
                             </div>
-                            <p class="text-sm leading-relaxed">大脑存在场景记忆切换机制，从学习/工作场景切换到手机虚拟场景时，临时任务记忆会被清空，瞬间忘记自己原本要做什么。</p>
+                            <p class="text-base leading-relaxed">大脑存在场景记忆切换机制，从学习/工作场景切换到手机虚拟场景时，临时任务记忆会被清空，瞬间忘记自己原本要做什么。</p>
                         </div>
                         <div class="card-sci animate-fade-up delay-200">
-                            <div class="flex items-center gap-2 mb-2">
-                                <i class="fa-solid fa-bullseye text-cyber-yellow"></i>
-                                <h3 class="font-bold text-cyber-yellow text-base">2. 产品设计：人性陷阱模型</h3>
+                            <div class="flex items-center gap-3 mb-3">
+                                <i class="fa-solid fa-bullseye text-cyber-yellow text-lg"></i>
+                                <h3 class="font-bold text-cyber-yellow text-lg">2. 产品设计：人性陷阱模型</h3>
                             </div>
-                            <p class="text-sm leading-relaxed">精准利用猎奇心理、社交攀比、强迫症红点执念，搭配无限下滑内容流，让你不知不觉陷入「越刷越停不下来」的循环。</p>
+                            <p class="text-base leading-relaxed">精准利用猎奇心理、社交攀比、强迫症红点执念，搭配无限下滑内容流，让你不知不觉陷入「越刷越停不下来」的循环。</p>
                         </div>
                         <div class="card-sci animate-fade-up delay-300">
-                            <div class="flex items-center gap-2 mb-2">
-                                <i class="fa-solid fa-brain text-cyber-green"></i>
-                                <h3 class="font-bold text-cyber-green text-base">3. 神经机制：多巴胺劫持</h3>
+                            <div class="flex items-center gap-3 mb-3">
+                                <i class="fa-solid fa-brain text-cyber-green text-lg"></i>
+                                <h3 class="font-bold text-cyber-green text-lg">3. 神经机制：多巴胺劫持</h3>
                             </div>
-                            <p class="text-sm leading-relaxed">短视频、娱乐资讯提供高频碎片化快感，持续刺激多巴胺分泌，让大脑习惯浅层愉悦，逐渐丧失长时间深度思考与专注的耐心。</p>
+                            <p class="text-base leading-relaxed">短视频、娱乐资讯提供高频碎片化快感，持续刺激多巴胺分泌，让大脑习惯浅层愉悦，逐渐丧失长时间深度思考与专注的耐心。</p>
                         </div>
                     </div>
-                    <div class="flex gap-3 animate-fade-up delay-400">
-                        <button class="btn-cyber flex-1 text-base" data-page="page-harm">了解长期危害</button>
-                        <button class="btn-cyber-outline flex-1 text-base" data-page="page-story2">返回上一页</button>
+                    <div class="flex gap-4 animate-fade-up delay-400">
+                        <button class="btn-cyber flex-1 text-lg" data-page="page-harm">了解长期危害</button>
+                        <button class="btn-cyber-outline flex-1 text-lg" data-page="page-story2">返回上一页</button>
                     </div>
                 </div>
 
                 <!-- 6.危害后果页 -->
                 <div class="page" id="page-harm">
-                    <div class="card-glow mb-5 animate-fade-up">
-                        <h2 class="text-xl font-bold text-gradient mb-4 text-center animate-title-glow">长期危害：被碎片化撕碎的人生</h2>
+                    <div class="card-glow mb-6 animate-fade-up">
+                        <h2 class="text-2xl font-bold text-gradient mb-5 text-center animate-title-glow">长期危害：被碎片化撕碎的人生</h2>
                         <div class="card-harm animate-fade-up delay-100">
-                            <p class="flex items-center gap-2 mb-2 text-base"><i class="fa-solid fa-bolt text-cyber-red"></i> <strong>深度思考能力逐步丧失</strong></p>
-                            <p class="text-sm leading-relaxed pl-5">长期沉迷碎片化短内容，大脑习惯浅层浏览，无法静下心阅读长文、深度思考、逻辑推演。</p>
+                            <p class="flex items-center gap-3 mb-3 text-lg"><i class="fa-solid fa-bolt text-cyber-red text-lg"></i> <strong>深度思考能力逐步丧失</strong></p>
+                            <p class="text-base leading-relaxed pl-6">长期沉迷碎片化短内容，大脑习惯浅层浏览，无法静下心阅读长文、深度思考、逻辑推演。</p>
                         </div>
                         <div class="card-harm animate-fade-up delay-200">
-                            <p class="flex items-center gap-2 mb-2 text-base"><i class="fa-solid fa-brain text-cyber-red"></i> <strong>记忆力与认知能力持续衰退</strong></p>
-                            <p class="text-sm leading-relaxed pl-5">频繁被消息、推送打断思维链路，记忆无法沉淀，健忘、反应迟钝、注意力涣散成为常态。</p>
+                            <p class="flex items-center gap-3 mb-3 text-lg"><i class="fa-solid fa-brain text-cyber-red text-lg"></i> <strong>记忆力与认知能力持续衰退</strong></p>
+                            <p class="text-base leading-relaxed pl-6">频繁被消息、推送打断思维链路，记忆无法沉淀，健忘、反应迟钝、注意力涣散成为常态。</p>
                         </div>
                         <div class="card-harm animate-fade-up delay-300">
-                            <p class="flex items-center gap-2 mb-2 text-base"><i class="fa-solid fa-angry text-cyber-red"></i> <strong>情绪焦虑与精神内耗恶性循环</strong></p>
-                            <p class="text-sm leading-relaxed pl-5">浪费时间后陷入自责焦虑，又靠刷手机逃避情绪，越分心越愧疚，越愧疚越沉迷。</p>
+                            <p class="flex items-center gap-3 mb-3 text-lg"><i class="fa-solid fa-angry text-cyber-red text-lg"></i> <strong>情绪焦虑与精神内耗恶性循环</strong></p>
+                            <p class="text-base leading-relaxed pl-6">浪费时间后陷入自责焦虑，又靠刷手机逃避情绪，越分心越愧疚，越愧疚越沉迷。</p>
                         </div>
                     </div>
-                    <div class="flex gap-3 animate-fade-up delay-400">
-                        <button class="btn-cyber flex-1 text-base" data-page="page-solution">科学自救方案</button>
-                        <button class="btn-cyber-outline flex-1 text-base" data-page="page-science1">返回上一页</button>
+                    <div class="flex gap-4 animate-fade-up delay-400">
+                        <button class="btn-cyber flex-1 text-lg" data-page="page-solution">科学自救方案</button>
+                        <button class="btn-cyber-outline flex-1 text-lg" data-page="page-science1">返回上一页</button>
                     </div>
                 </div>
 
                 <!-- 7.解决方法页 -->
                 <div class="page" id="page-solution">
-                    <div class="card-glow mb-5 animate-fade-up">
-                        <h2 class="text-xl font-bold text-gradient mb-4 text-center animate-title-glow">夺回注意力：无需硬自律的极简自救</h2>
-                        <p class="mb-3 leading-relaxed text-base animate-fade-up delay-100">不用彻底戒手机、不用强行压抑欲望，只需从手机设置、桌面整理、通知管控、习惯养成四个维度，从源头减少干扰，轻松夺回专注力掌控权。</p>
-                        <p class="mb-3 text-cyber-light/80 text-base animate-fade-up delay-200">核心自救四大步骤：</p>
-                        <div class="space-y-2 text-cyber-light/80 pl-1 text-base animate-fade-up delay-300">
-                            <p class="flex items-center gap-2">✅ 整理手机桌面，分类收纳娱乐App</p>
-                            <p class="flex items-center gap-2">✅ 关闭非必要推送与红点通知</p>
-                            <p class="flex items-center gap-2">✅ 开启专注模式，屏蔽娱乐干扰</p>
-                            <p class="flex items-center gap-2">✅ 养成无手机专注生活习惯</p>
+                    <div class="card-glow mb-6 animate-fade-up">
+                        <h2 class="text-2xl font-bold text-gradient mb-5 text-center animate-title-glow">夺回注意力：无需硬自律的极简自救</h2>
+                        <p class="mb-4 leading-relaxed text-lg animate-fade-up delay-100">不用彻底戒手机、不用强行压抑欲望，只需从手机设置、桌面整理、通知管控、习惯养成四个维度，从源头减少干扰，轻松夺回专注力掌控权。</p>
+                        <p class="mb-4 text-cyber-light/80 text-lg animate-fade-up delay-200">核心自救四大步骤：</p>
+                        <div class="space-y-3 text-cyber-light/80 pl-2 text-lg animate-fade-up delay-300">
+                            <p class="flex items-center gap-3">✅ 整理手机桌面，分类收纳娱乐App</p>
+                            <p class="flex items-center gap-3">✅ 关闭非必要推送与红点通知</p>
+                            <p class="flex items-center gap-3">✅ 开启专注模式，屏蔽娱乐干扰</p>
+                            <p class="flex items-center gap-3">✅ 养成无手机专注生活习惯</p>
                         </div>
                     </div>
-                    <p class="text-sm text-center text-cyber-light/50 mb-4 animate-fade-up delay-400">进入互动实操，亲手完成专注力改造</p>
-                    <div class="flex gap-3 animate-fade-up delay-400">
-                        <button class="btn-cyber flex-1 text-base" data-page="page-step1">开始实操挑战</button>
-                        <button class="btn-cyber-outline flex-1 text-base" data-page="page-harm">返回上一页</button>
+                    <p class="text-base text-center text-cyber-light/50 mb-6 animate-fade-up delay-400">进入互动实操，亲手完成专注力改造</p>
+                    <div class="flex gap-4 animate-fade-up delay-400">
+                        <button class="btn-cyber flex-1 text-lg" data-page="page-step1">开始实操挑战</button>
+                        <button class="btn-cyber-outline flex-1 text-lg" data-page="page-harm">返回上一页</button>
                     </div>
                 </div>
 
                 <!-- 实操①：拖拽归类APP -->
                 <div class="page" id="page-step1">
-                    <div class="card-glow mb-5 animate-fade-up">
-                        <h2 class="text-xl font-bold text-gradient mb-4 text-center animate-title-glow">实操①：拖拽归类手机App</h2>
-                        <p class="text-center mb-3 text-sm animate-fade-up delay-100">把下方App拖拽到对应分类文件夹中</p>
-                        <p class="text-center mb-4 text-cyber-blue text-sm animate-fade-up delay-200">学习办公→📘 | 理财购物→💰 | 娱乐→🎮 | 系统工具→⚙️</p>
+                    <div class="card-glow mb-6 animate-fade-up">
+                        <h2 class="text-2xl font-bold text-gradient mb-5 text-center animate-title-glow">实操①：拖拽归类手机App</h2>
+                        <p class="text-center mb-4 text-base animate-fade-up delay-100">把下方App拖拽到对应分类文件夹中</p>
+                        <p class="text-center mb-5 text-cyber-blue text-base animate-fade-up delay-200">学习办公→📘 | 理财购物→💰 | 娱乐→🎮 | 系统工具→⚙️</p>
                         <div class="phone-screen animate-fade-up delay-300">
-                            <div class="grid grid-cols-4 gap-3 mb-5" id="appContainer">
-                                <div class="app-icon" draggable="true" data-category="study" id="app1" ondragstart="drag(event)"><i class="fa-brands fa-weixin text-lg"></i><span>微信</span></div>
-                                <div class="app-icon" draggable="true" data-category="study" id="app2" ondragstart="drag(event)"><i class="fa-brands fa-qq text-lg"></i><span>QQ</span></div>
-                                <div class="app-icon" draggable="true" data-category="study" id="app3" ondragstart="drag(event)"><i class="fa-solid fa-file-text text-lg"></i><span>WPS</span></div>
-                                <div class="app-icon" draggable="true" data-category="study" id="app4" ondragstart="drag(event)"><i class="fa-solid fa-book text-lg"></i><span>网课</span></div>
-                                <div class="app-icon" draggable="true" data-category="money" id="app5" ondragstart="drag(event)"><i class="fa-brands fa-alipay text-lg"></i><span>支付宝</span></div>
-                                <div class="app-icon" draggable="true" data-category="money" id="app6" ondragstart="drag(event)"><i class="fa-solid fa-bag-shopping text-lg"></i><span>淘宝</span></div>
-                                <div class="app-icon" draggable="true" data-category="money" id="app7" ondragstart="drag(event)"><i class="fa-solid fa-utensils text-lg"></i><span>美团</span></div>
-                                <div class="app-icon" draggable="true" data-category="money" id="app8" ondragstart="drag(event)"><i class="fa-solid fa-credit-card text-lg"></i><span>银行</span></div>
-                                <div class="app-icon" draggable="true" data-category="fun" id="app9" ondragstart="drag(event)"><i class="fa-brands fa-tiktok text-lg"></i><span>抖音</span></div>
-                                <div class="app-icon" draggable="true" data-category="fun" id="app10" ondragstart="drag(event)"><i class="fa-brands fa-bilibili text-lg"></i><span>B站</span></div>
-                                <div class="app-icon" draggable="true" data-category="fun" id="app11" ondragstart="drag(event)"><i class="fa-brands fa-weibo text-lg"></i><span>微博</span></div>
-                                <div class="app-icon" draggable="true" data-category="fun" id="app12" ondragstart="drag(event)"><i class="fa-solid fa-gamepad text-lg"></i><span>王者</span></div>
-                                <div class="app-icon" draggable="true" data-category="tool" id="app13" ondragstart="drag(event)"><i class="fa-solid fa-gear text-lg"></i><span>设置</span></div>
-                                <div class="app-icon" draggable="true" data-category="tool" id="app14" ondragstart="drag(event)"><i class="fa-solid fa-phone text-lg"></i><span>电话</span></div>
-                                <div class="app-icon" draggable="true" data-category="tool" id="app15" ondragstart="drag(event)"><i class="fa-solid fa-camera text-lg"></i><span>相机</span></div>
+                            <div class="grid grid-cols-4 gap-4 mb-6" id="appContainer">
+                                <div class="app-icon" draggable="true" data-category="study" id="app1" ondragstart="drag(event)"><i class="fa-brands fa-weixin text-xl"></i><span>微信</span></div>
+                                <div class="app-icon" draggable="true" data-category="study" id="app2" ondragstart="drag(event)"><i class="fa-brands fa-qq text-xl"></i><span>QQ</span></div>
+                                <div class="app-icon" draggable="true" data-category="study" id="app3" ondragstart="drag(event)"><i class="fa-solid fa-file-text text-xl"></i><span>WPS</span></div>
+                                <div class="app-icon" draggable="true" data-category="study" id="app4" ondragstart="drag(event)"><i class="fa-solid fa-book text-xl"></i><span>网课</span></div>
+                                <div class="app-icon" draggable="true" data-category="money" id="app5" ondragstart="drag(event)"><i class="fa-brands fa-alipay text-xl"></i><span>支付宝</span></div>
+                                <div class="app-icon" draggable="true" data-category="money" id="app6" ondragstart="drag(event)"><i class="fa-solid fa-bag-shopping text-xl"></i><span>淘宝</span></div>
+                                <div class="app-icon" draggable="true" data-category="money" id="app7" ondragstart="drag(event)"><i class="fa-solid fa-utensils text-xl"></i><span>美团</span></div>
+                                <div class="app-icon" draggable="true" data-category="money" id="app8" ondragstart="drag(event)"><i class="fa-solid fa-credit-card text-xl"></i><span>银行</span></div>
+                                <div class="app-icon" draggable="true" data-category="fun" id="app9" ondragstart="drag(event)"><i class="fa-brands fa-tiktok text-xl"></i><span>抖音</span></div>
+                                <div class="app-icon" draggable="true" data-category="fun" id="app10" ondragstart="drag(event)"><i class="fa-brands fa-bilibili text-xl"></i><span>B站</span></div>
+                                <div class="app-icon" draggable="true" data-category="fun" id="app11" ondragstart="drag(event)"><i class="fa-brands fa-weibo text-xl"></i><span>微博</span></div>
+                                <div class="app-icon" draggable="true" data-category="fun" id="app12" ondragstart="drag(event)"><i class="fa-solid fa-gamepad text-xl"></i><span>王者</span></div>
+                                <div class="app-icon" draggable="true" data-category="tool" id="app13" ondragstart="drag(event)"><i class="fa-solid fa-gear text-xl"></i><span>设置</span></div>
+                                <div class="app-icon" draggable="true" data-category="tool" id="app14" ondragstart="drag(event)"><i class="fa-solid fa-phone text-xl"></i><span>电话</span></div>
+                                <div class="app-icon" draggable="true" data-category="tool" id="app15" ondragstart="drag(event)"><i class="fa-solid fa-camera text-xl"></i><span>相机</span></div>
                             </div>
-                            <div class="space-y-3">
-                                <div><p class="folder-title">📘 学习办公</p><div class="app-folder grid grid-cols-4 gap-3" id="studyFolder" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)"></div></div>
-                                <div><p class="folder-title">💰 理财购物</p><div class="app-folder grid grid-cols-4 gap-3" id="moneyFolder" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)"></div></div>
-                                <div><p class="folder-title">🎮 娱乐休闲</p><div class="app-folder grid grid-cols-4 gap-3" id="funFolder" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)"></div></div>
-                                <div><p class="folder-title">⚙️ 系统工具</p><div class="app-folder grid grid-cols-4 gap-3" id="toolFolder" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)"></div></div>
+                            <div class="space-y-4">
+                                <div><p class="folder-title">📘 学习办公</p><div class="app-folder grid grid-cols-4 gap-4" id="studyFolder" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)"></div></div>
+                                <div><p class="folder-title">💰 理财购物</p><div class="app-folder grid grid-cols-4 gap-4" id="moneyFolder" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)"></div></div>
+                                <div><p class="folder-title">🎮 娱乐休闲</p><div class="app-folder grid grid-cols-4 gap-4" id="funFolder" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)"></div></div>
+                                <div><p class="folder-title">⚙️ 系统工具</p><div class="app-folder grid grid-cols-4 gap-4" id="toolFolder" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="dragLeave(event)"></div></div>
                             </div>
                         </div>
                     </div>
-                    <button class="btn-cyber w-full text-base animate-fade-up delay-400" onclick="checkStep1()">完成归类 → 下一步设置通知</button>
+                    <button class="btn-cyber w-full text-lg animate-fade-up delay-400" onclick="checkStep1()">完成归类 → 下一步设置通知</button>
                 </div>
 
                 <!-- 实操②：通知权限 -->
                 <div class="page" id="page-step2">
-                    <div class="card-glow mb-5 animate-fade-up">
-                        <h2 class="text-xl font-bold text-gradient mb-4 text-center animate-title-glow">实操②：通知权限精准管理</h2>
-                        <p class="text-center mb-3 text-sm animate-fade-up delay-100">规则：✅ 学习办公保留通知 | 其余全部手动关闭</p>
-                        <p class="text-center mb-4 text-sm text-cyber-light/60 animate-fade-up delay-200">点击开关，关闭理财、娱乐、工具类多余推送</p>
-                        <div class="mb-5 animate-fade-up delay-300">
-                            <p class="text-sm text-cyber-blue font-bold mb-3">📘 学习办公（保留通知）</p>
+                    <div class="card-glow mb-6 animate-fade-up">
+                        <h2 class="text-2xl font-bold text-gradient mb-5 text-center animate-title-glow">实操②：通知权限精准管理</h2>
+                        <p class="text-center mb-4 text-base animate-fade-up delay-100">规则：✅ 学习办公保留通知 | 其余全部手动关闭</p>
+                        <p class="text-center mb-5 text-base text-cyber-light/60 animate-fade-up delay-200">点击开关，关闭理财、娱乐、工具类多余推送</p>
+                        <div class="mb-6 animate-fade-up delay-300">
+                            <p class="text-base text-cyber-blue font-bold mb-4">📘 学习办公（保留通知）</p>
                             <div class="notify-item" data-type="study"><span>微信</span><div class="notify-switch switch-on" onclick="toggleSwitch(this)"><div class="switch-circle right-0.5"></div></div></div>
                             <div class="notify-item" data-type="study"><span>QQ</span><div class="notify-switch switch-on" onclick="toggleSwitch(this)"><div class="switch-circle right-0.5"></div></div></div>
                             <div class="notify-item" data-type="study"><span>WPS</span><div class="notify-switch switch-on" onclick="toggleSwitch(this)"><div class="switch-circle right-0.5"></div></div></div>
                             <div class="notify-item" data-type="study"><span>网课</span><div class="notify-switch switch-on" onclick="toggleSwitch(this)"><div class="switch-circle right-0.5"></div></div></div>
                         </div>
-                        <div class="mb-5 animate-fade-up delay-300">
-                            <p class="text-sm font-bold mb-3">💰 理财购物（关闭所有推送）</p>
+                        <div class="mb-6 animate-fade-up delay-300">
+                            <p class="text-base font-bold mb-4">💰 理财购物（关闭所有推送）</p>
                             <div class="notify-item" data-type="other"><span>支付宝</span><div class="notify-switch switch-on" onclick="toggleSwitch(this)"><div class="switch-circle right-0.5"></div></div></div>
                             <div class="notify-item" data-type="other"><span>淘宝</span><div class="notify-switch switch-on" onclick="toggleSwitch(this)"><div class="switch-circle right-0.5"></div></div></div>
                             <div class="notify-item" data-type="other"><span>美团</span><div class="notify-switch switch-on" onclick="toggleSwitch(this)"><div class="switch-circle right-0.5"></div></div></div>
                         </div>
-                        <div class="mb-5 animate-fade-up delay-300">
-                            <p class="text-sm font-bold mb-3">🎮 娱乐休闲（关闭所有推送）</p>
+                        <div class="mb-6 animate-fade-up delay-300">
+                            <p class="text-base font-bold mb-4">🎮 娱乐休闲（关闭所有推送）</p>
                             <div class="notify-item" data-type="other"><span>抖音</span><div class="notify-switch switch-on" onclick="toggleSwitch(this)"><div class="switch-circle right-0.5"></div></div></div>
                             <div class="notify-item" data-type="other"><span>B站</span><div class="notify-switch switch-on" onclick="toggleSwitch(this)"><div class="switch-circle right-0.5"></div></div></div>
                         </div>
                     </div>
-                    <button class="btn-cyber w-full text-base animate-fade-up delay-400" onclick="checkStep2()">确认设置 → 开启专注模式</button>
+                    <button class="btn-cyber w-full text-lg animate-fade-up delay-400" onclick="checkStep2()">确认设置 → 开启专注模式</button>
                 </div>
 
                 <!-- 实操③：专注模式 -->
                 <div class="page" id="page-step-mode">
-                    <div class="card-glow mb-5 animate-fade-up">
-                        <h2 class="text-xl font-bold text-gradient mb-4 text-center animate-title-glow">实操③：手机专注模式设置</h2>
-                        <p class="mb-4 leading-relaxed text-sm animate-fade-up delay-100">自定义专注时长，开启系统级干扰屏蔽，打造无打扰学习环境。</p>
-                        <p class="text-base font-bold mb-3 animate-fade-up delay-200">选择专注时长</p>
-                        <div class="grid grid-cols-4 gap-3 mb-5 animate-fade-up delay-300">
+                    <div class="card-glow mb-6 animate-fade-up">
+                        <h2 class="text-2xl font-bold text-gradient mb-5 text-center animate-title-glow">实操③：手机专注模式设置</h2>
+                        <p class="mb-5 leading-relaxed text-base animate-fade-up delay-100">自定义专注时长，开启系统级干扰屏蔽，打造无打扰学习环境。</p>
+                        <p class="text-lg font-bold mb-4 animate-fade-up delay-200">选择专注时长</p>
+                        <div class="grid grid-cols-4 gap-4 mb-6 animate-fade-up delay-300">
                             <div class="time-option" onclick="selectTime(this,15)">15分钟</div>
                             <div class="time-option active" onclick="selectTime(this,25)">25分钟</div>
                             <div class="time-option" onclick="selectTime(this,45)">45分钟</div>
                             <div class="time-option" onclick="selectTime(this,60)">60分钟</div>
                         </div>
-                        <p class="text-sm text-cyber-light/50 mb-4 animate-fade-up delay-300">已选时长：<span id="curTime">25</span> 分钟</p>
-                        <p class="text-base font-bold mb-3 animate-fade-up delay-300">专注模式开关设置（必须全部打开）</p>
-                        <div class="space-y-3 animate-fade-up delay-400">
+                        <p class="text-base text-cyber-light/50 mb-5 animate-fade-up delay-300">已选时长：<span id="curTime">25</span> 分钟</p>
+                        <p class="text-lg font-bold mb-4 animate-fade-up delay-300">专注模式开关设置（必须全部打开）</p>
+                        <div class="space-y-4 animate-fade-up delay-400">
                             <div class="notify-item"><span>自动屏蔽娱乐社交应用弹窗</span><div class="notify-switch switch-on" onclick="toggleSwitch(this)"><div class="switch-circle right-0.5"></div></div></div>
                             <div class="notify-item"><span>仅保留学习办公软件使用权限</span><div class="notify-switch switch-on" onclick="toggleSwitch(this)"><div class="switch-circle right-0.5"></div></div></div>
                             <div class="notify-item"><span>自动关闭桌面红点与消息角标</span><div class="notify-switch switch-on" onclick="toggleSwitch(this)"><div class="switch-circle right-0.5"></div></div></div>
                         </div>
                     </div>
-                    <div class="flex gap-3 animate-fade-up delay-400">
-                        <button class="btn-cyber-outline flex-1 text-base" onclick="switchPage('page-step2')">上一步</button>
-                        <button class="btn-cyber flex-1 text-base" onclick="checkModeSettings()">进入习惯养成 → 下一步</button>
+                    <div class="flex gap-4 animate-fade-up delay-400">
+                        <button class="btn-cyber-outline flex-1 text-lg" onclick="switchPage('page-step2')">上一步</button>
+                        <button class="btn-cyber flex-1 text-lg" onclick="checkModeSettings()">进入习惯养成 → 下一步</button>
                     </div>
                 </div>
 
                 <!-- 实操④：专注习惯选择 -->
                 <div class="page" id="page-step3">
-                    <div class="card-glow mb-5 animate-fade-up">
-                        <h2 class="text-xl font-bold text-gradient mb-4 text-center animate-title-glow">实操④：养成专注生活好习惯</h2>
-                        <p class="text-center text-sm mb-4 text-cyber-yellow animate-fade-up delay-100">请只选中3条正确的专注力生活习惯</p>
-                        <div class="space-y-3 animate-fade-up delay-200">
+                    <div class="card-glow mb-6 animate-fade-up">
+                        <h2 class="text-2xl font-bold text-gradient mb-5 text-center animate-title-glow">实操④：养成专注生活好习惯</h2>
+                        <p class="text-center text-base mb-5 text-cyber-yellow animate-fade-up delay-100">请只选中3条正确的专注力生活习惯</p>
+                        <div class="space-y-4 animate-fade-up delay-200">
                             <div class="choice-item" onclick="toggleMulti(this)">睡前1小时远离手机，拒绝熬夜刷视频</div>
                             <div class="choice-item" onclick="toggleMulti(this)">每天固定预留无手机专注时间段</div>
                             <div class="choice-item" onclick="toggleMulti(this)">空闲时间用散步、阅读替代刷手机</div>
@@ -577,40 +578,40 @@
                             <div class="choice-item text-cyber-light/70" onclick="toggleMulti(this)">上课上班随时查看消息</div>
                         </div>
                     </div>
-                    <button class="btn-cyber w-full text-base animate-fade-up delay-400" onclick="finalCheck()">提交选择 · 完成专注力挑战</button>
+                    <button class="btn-cyber w-full text-lg animate-fade-up delay-400" onclick="finalCheck()">提交选择 · 完成专注力挑战</button>
                 </div>
 
                 <!-- 失败页（优化：返回当前步骤） -->
                 <div class="page" id="page-fail">
-                    <div class="card-glow text-center py-10 animate-fade-up">
-                        <i class="fa-solid fa-triangle-exclamation text-4xl text-cyber-red mb-4"></i>
-                        <h2 class="text-xl font-bold text-cyber-red mb-4">挑战失败</h2>
-                        <p class="mb-3 text-base">没有坚守住自己的注意力，你完全被手机掌控了</p>
-                        <p class="text-sm text-cyber-light/60 mb-5">请返回上一步，重新调整心态挑战</p>
-                        <button class="btn-cyber w-full text-base mb-3" onclick="goBackToCurrentStep()">返回上一步重新挑战</button>
-                        <button class="btn-cyber-outline w-full text-base" onclick="resetAll()">重新开始全部体验</button>
+                    <div class="card-glow text-center py-12 animate-fade-up">
+                        <i class="fa-solid fa-triangle-exclamation text-5xl text-cyber-red mb-5"></i>
+                        <h2 class="text-2xl font-bold text-cyber-red mb-5">挑战失败</h2>
+                        <p class="mb-4 text-lg">没有坚守住自己的注意力，你完全被手机掌控了</p>
+                        <p class="text-base text-cyber-light/60 mb-6">请返回上一步，重新调整心态挑战</p>
+                        <button class="btn-cyber w-full text-lg mb-4" onclick="goBackToCurrentStep()">返回上一步重新挑战</button>
+                        <button class="btn-cyber-outline w-full text-lg" onclick="resetAll()">重新开始全部体验</button>
                     </div>
                 </div>
 
                 <!-- 成功页 -->
                 <div class="page" id="page-success">
-                    <div class="card-glow text-center py-10 animate-fade-up">
-                        <i class="fa-solid fa-crown text-5xl text-gradient mb-5"></i>
-                        <h2 class="text-2xl font-bold text-gradient mb-4">专注力大师 · 挑战圆满成功</h2>
-                        <p class="text-cyber-green font-bold mb-3 text-base">恭喜你！成功夺回被算法绑架的注意力</p>
-                        <p class="text-base leading-relaxed mb-5">你已经读懂注意力绑架的商业逻辑与科学原理，掌握了四大自救方法。</p>
-                        <button class="btn-cyber w-full text-base" onclick="resetAll()">重新沉浸式体验</button>
+                    <div class="card-glow text-center py-12 animate-fade-up">
+                        <i class="fa-solid fa-crown text-6xl text-gradient mb-6"></i>
+                        <h2 class="text-2xl font-bold text-gradient mb-5">专注力大师 · 挑战圆满成功</h2>
+                        <p class="text-cyber-green font-bold mb-4 text-lg">恭喜你！成功夺回被算法绑架的注意力</p>
+                        <p class="text-lg leading-relaxed mb-6">你已经读懂注意力绑架的商业逻辑与科学原理，掌握了四大自救方法。</p>
+                        <button class="btn-cyber w-full text-lg" onclick="resetAll()">重新沉浸式体验</button>
                     </div>
                 </div>
 
                 <!-- 游戏结束弹窗（放在屏幕内部） -->
                 <div id="end-screen" class="hidden fixed inset-0 bg-black/90 flex items-center justify-center z-50">
-                    <div class="bg-zinc-900 border border-red-900 rounded-3xl w-[280px] p-6 text-center">
-                        <h2 id="end-title" class="text-lg font-bold mb-3"></h2>
-                        <div id="end-text" class="text-zinc-300 leading-relaxed text-sm mb-4"></div>
-                        <div class="flex gap-3">
-                            <button onclick="restartGame()" class="flex-1 py-3 bg-red-600 hover:bg-red-700 rounded-2xl font-medium text-sm">再来一次</button>
-                            <button onclick="closeEndScreen()" class="flex-1 py-3 bg-gray-700 hover:bg-gray-600 rounded-2xl font-medium text-sm">关闭弹窗</button>
+                    <div class="bg-zinc-900 border border-red-900 rounded-3xl w-[320px] p-7 text-center">
+                        <h2 id="end-title" class="text-xl font-bold mb-4"></h2>
+                        <div id="end-text" class="text-zinc-300 leading-relaxed text-base mb-5"></div>
+                        <div class="flex gap-4">
+                            <button onclick="restartGame()" class="flex-1 py-4 bg-red-600 hover:bg-red-700 rounded-2xl font-medium text-base">再来一次</button>
+                            <button onclick="closeEndScreen()" class="flex-1 py-4 bg-gray-700 hover:bg-gray-600 rounded-2xl font-medium text-base">关闭弹窗</button>
                         </div>
                     </div>
                 </div>
@@ -697,10 +698,10 @@ function showNotification(){
 function showChoices(){
     const container = document.getElementById('choices');
     if(!container || !stages[currentStage]) return;
-    container.innerHTML = `<div class="text-sm text-amber-400 mb-3">第 ${currentStage + 1} 关 · 别分心！</div>`;
+    container.innerHTML = `<div class="text-base text-amber-400 mb-4">第 ${currentStage + 1} 关 · 别分心！</div>`;
     stages[currentStage].choices.forEach(choice => {
         const btn = document.createElement('button');
-        btn.className = `w-full py-3.5 px-4 mb-3 rounded-xl text-left text-base transition-all ${choice.good ? 
+        btn.className = `w-full py-4 px-5 mb-4 rounded-xl text-left text-lg transition-all ${choice.good ? 
             'border-2 border-emerald-500 hover:bg-emerald-950/60' : 
             'border border-zinc-700 hover:border-red-500'}`;
         btn.textContent = choice.text;
